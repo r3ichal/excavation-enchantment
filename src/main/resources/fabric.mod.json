@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "excavation_enchantment",
+  "version": "${version}",
+  "name": "Excavation Enchantment",
+  "description": "Adds an 'Excavation' enchantment (3 levels) for pickaxe/shovel that allows you to dig in 3x3x3 area with your tools (level dependent)",
+  "authors": ["r3ichal"],
+  "contact": {
+    "sources": "https://github.com/r3ichal/excavation-enchantment"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/excavation_enchantment/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["excavation_enchantment.mod.ExcavationEnchantment"],
+    "client": ["excavation_enchantment.mod.ExcavationEnchantmentClient"]
+  },
+  "mixins": ["excavation-enchantment.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
